@@ -769,7 +769,7 @@ Worked on CRUD operations, authentication, and API integration
 <!-- Contact Form -->
 <div class="flex-1">
 <form action ="https://formsubmit.co/prasanayogesh0@gmail.com"  class="flex flex-col gap-4 bg-surface-dark p-8 rounded-xl border border-slate-800 shadow-xl" method="POST">
-<h3 class="text-xl font-bold mb-2">Send a Message</h3>
+<h3 class="text-xl font-bold mb-2" autocomplete="off">Send a Message</h3>
 
 <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_subject" value="New Message from Portfolio">
@@ -777,15 +777,15 @@ Worked on CRUD operations, authentication, and API integration
 
 <div class="flex flex-col gap-1">
 <label class="text-sm font-medium text-slate-400" for="name">Your Name</label>
-<input class="bg-background-dark border border-slate-700 rounded-lg h-12 px-4 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="name" name ="name"placeholder=" " type="text" required />
+<input class="bg-background-dark border border-slate-700 rounded-lg h-12 px-4 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="name" name ="name" placeholder=" " autocomplete="off" type="text" required />
 </div>
 <div class="flex flex-col gap-1">
 <label class="text-sm font-medium text-slate-400" for="email">Your Email</label>
-<input class="bg-background-dark border border-slate-700 rounded-lg h-12 px-4 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="email" name="email" placeholder="" type="email" required/>
+<input class="bg-background-dark border border-slate-700 rounded-lg h-12 px-4 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="email" name="email" placeholder="" autocomplete="new-email" type="email" required/>
 </div>
 <div class="flex flex-col gap-1">
 <label class="text-sm font-medium text-slate-400" for="message">Message</label>
-<textarea class="bg-background-dark border border-slate-700 rounded-lg p-4 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-none" name ="message"id="message" placeholder="Hello, I'd like to talk about..." rows="4" required></textarea>
+<textarea class="bg-background-dark border border-slate-700 rounded-lg p-4 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-none" name ="message"id="message" autocomplete="off" placeholder="Hello, I'd like to talk about..." rows="4" required></textarea>
 </div>
 <button class="mt-2 bg-primary text-white h-12 rounded-lg font-bold hover:bg-[#1a6bb8] transition-colors shadow-lg shadow-primary/20" onclick="sendemail()" type="submit">
                             Send Message
